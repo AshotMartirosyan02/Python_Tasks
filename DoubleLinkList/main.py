@@ -1,0 +1,33 @@
+from  double_link_list import DoubleLinkList
+
+
+
+if __name__ == "__main__":
+    ls = DoubleLinkList()
+    ls.append(1)
+    ls.append(2)
+    ls.append(3)
+    ls.display()
+    print()
+    ls.prepend(0)
+    ls.display()
+    print()
+    ls.insert_after(2, 12)
+    ls.display()
+    print()
+    ls.insert_before(2, 17)
+    ls.display()
+    print()
+    ls.delete(2)
+    ls.display()
+    print()
+    print(ls.is_empty())
+    ls.delete(0)
+    ls.delete(1)
+    ls.delete(12)
+    ls.display()
+    print()
+    ls.delete(17)
+    ls.delete(3)
+    ls.display()
+    print(ls.is_empty())
