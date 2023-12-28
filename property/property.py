@@ -8,7 +8,7 @@ class Property:
     def __get__(self, instance, owner_class):
         if self.fget is None:
             raise AttributeError("Dont define getter methor")
-        return self.fget(isinstance)
+        return self.fget(instance)
     def __set__(self, instance, value):
         if self.fset is None:
             raise AttributeError("Dont define setter method")
